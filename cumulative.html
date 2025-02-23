@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumulative Time Limit calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cumulative Time Limit calculator</h2>
+
+        <label for="timeLimit">Enter total Time Limit (mm:ss.sss):</label>
+        <input type="text" id="timeLimit" placeholder="10:00.000" oninput="checkTimeLimit()">
+
+        <div id="solveTimesContainer"></div>
+
+        <button onclick="addSolveTimeBox()">Add attempt</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script src="full.js"></script>
+
+    <script>
+        // Registering the Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then((registration) => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }).catch((error) => {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+    </script>
+
+</body>
+</html>
