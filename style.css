@@ -69,3 +69,11 @@ p#result {
     color: #333;
     margin-top: 20px;
 }
+
+/* Footer links (h3 a) */
+h3 a {
+    color:#45a049;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
