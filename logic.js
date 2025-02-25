@@ -43,7 +43,7 @@ function checkTimeLimit() {
         totalTime += time;
         if (totalTime > timeLimit) {
             const excessTime = totalTime - timeLimit;
-            document.getElementById("result").innerHTML = `Cumulative time limit exceeded by ${formatTime(excessTime)}!<br>Total cumulative time: ${formatTime(totalTime)}.`;
+            document.getElementById("result").innerHTML = `Cumulative time limit exceeded by ${formatTime(excessTime)}<br>Total cumulative time: ${formatTime(totalTime)}.`;
             document.getElementById("result").style.color = "red";
             return;
         }
@@ -51,7 +51,7 @@ function checkTimeLimit() {
     
     // If within the limit, show how much time is left before reaching the limit
     const timeLeft = timeLimit - totalTime;
-    document.getElementById("result").innerHTML = `Within limit. Time remaining: ${formatTime(timeLeft)}.<br>Total cumulative time: ${formatTime(totalTime)}.`;
+    document.getElementById("result").innerHTML = `Within limit. Time remaining: ${formatTime(timeLeft)}<br>Total cumulative time: ${formatTime(totalTime)}`;
     document.getElementById("result").style.color = "green";
 }
 
