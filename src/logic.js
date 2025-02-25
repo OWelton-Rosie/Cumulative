@@ -43,7 +43,7 @@ function checkTimeLimit() {
         totalTime += time;
         if (totalTime > timeLimit) {
             const excessTime = totalTime - timeLimit;
-            document.getElementById("result").innerHTML = `Cumulative time limit exceeded by ${formatTime(excessTime)}<br>Total cumulative time: ${formatTime(totalTime)}.`;
+            document.getElementById("result").innerHTML = `Cumulative time limit exceeded by ${formatTime(excessTime)}<br>Total cumulative time: ${formatTime(totalTime)}`;
             document.getElementById("result").style.color = "red";
             return;
         }
