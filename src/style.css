@@ -110,3 +110,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h3 a {
+    color:#0fb00f
+}
+
+h3 a:hover {
+    color:#0e800e
+}
