@@ -3,7 +3,7 @@ const assets = [
     '/',
     '/index.html',
     '/style.css',
-    '/full.js',
+    '/logic.js',
     '/definition.js',
 ];
 
