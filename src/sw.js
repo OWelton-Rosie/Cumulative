@@ -4,6 +4,7 @@ const assets = [
     '/index.html',
     '/style.css',
     '/full.js',
+    '/definition.js',
 ];
 
 // Install event - caching assets
